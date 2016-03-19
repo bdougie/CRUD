@@ -14,6 +14,10 @@
 		33A5820E1C7A959000686F7D /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 33A5820C1C7A959000686F7D /* LaunchScreen.storyboard */; };
 		33A582191C7A959000686F7D /* CRUDTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 33A582181C7A959000686F7D /* CRUDTests.swift */; };
 		33A582241C7A959000686F7D /* CRUDUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 33A582231C7A959000686F7D /* CRUDUITests.swift */; };
+		33A582331C7A95B500686F7D /* Model.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = 33A582311C7A95B500686F7D /* Model.xcdatamodeld */; };
+		33A582351C7A95E300686F7D /* CDHelper.swift in Sources */ = {isa = PBXBuildFile; fileRef = 33A582341C7A95E300686F7D /* CDHelper.swift */; };
+		33A582381C7A960800686F7D /* Person+CoreDataProperties.swift in Sources */ = {isa = PBXBuildFile; fileRef = 33A582361C7A960800686F7D /* Person+CoreDataProperties.swift */; };
+		33A582391C7A960800686F7D /* Person.swift in Sources */ = {isa = PBXBuildFile; fileRef = 33A582371C7A960800686F7D /* Person.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -47,6 +51,10 @@
 		33A5821F1C7A959000686F7D /* CRUDUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = CRUDUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		33A582231C7A959000686F7D /* CRUDUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CRUDUITests.swift; sourceTree = "<group>"; };
 		33A582251C7A959000686F7D /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		33A582321C7A95B500686F7D /* Model.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = Model.xcdatamodel; sourceTree = "<group>"; };
+		33A582341C7A95E300686F7D /* CDHelper.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = CDHelper.swift; path = "../../../Downloads/CoreData-CoreDataStack-master/CoreDataStack/CDHelper.swift"; sourceTree = "<group>"; };
+		33A582361C7A960800686F7D /* Person+CoreDataProperties.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "Person+CoreDataProperties.swift"; sourceTree = "<group>"; };
+		33A582371C7A960800686F7D /* Person.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Person.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -77,6 +85,9 @@
 		33A581F71C7A959000686F7D = {
 			isa = PBXGroup;
 			children = (
+				33A582361C7A960800686F7D /* Person+CoreDataProperties.swift */,
+				33A582371C7A960800686F7D /* Person.swift */,
+				33A582311C7A95B500686F7D /* Model.xcdatamodeld */,
 				33A582021C7A959000686F7D /* CRUD */,
 				33A582171C7A959000686F7D /* CRUDTests */,
 				33A582221C7A959000686F7D /* CRUDUITests */,
@@ -98,6 +109,7 @@
 			isa = PBXGroup;
 			children = (
 				33A582031C7A959000686F7D /* AppDelegate.swift */,
+				33A582341C7A95E300686F7D /* CDHelper.swift */,
 				33A582051C7A959000686F7D /* ViewController.swift */,
 				33A582071C7A959000686F7D /* Main.storyboard */,
 				33A5820A1C7A959000686F7D /* Assets.xcassets */,
@@ -256,8 +268,12 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				33A582391C7A960800686F7D /* Person.swift in Sources */,
+				33A582351C7A95E300686F7D /* CDHelper.swift in Sources */,
+				33A582381C7A960800686F7D /* Person+CoreDataProperties.swift in Sources */,
 				33A582061C7A959000686F7D /* ViewController.swift in Sources */,
 				33A582041C7A959000686F7D /* AppDelegate.swift in Sources */,
+				33A582331C7A95B500686F7D /* Model.xcdatamodeld in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -500,6 +516,19 @@
 			defaultConfigurationIsVisible = 0;
 		};
 /* End XCConfigurationList section */
+
+/* Begin XCVersionGroup section */
+		33A582311C7A95B500686F7D /* Model.xcdatamodeld */ = {
+			isa = XCVersionGroup;
+			children = (
+				33A582321C7A95B500686F7D /* Model.xcdatamodel */,
+			);
+			currentVersion = 33A582321C7A95B500686F7D /* Model.xcdatamodel */;
+			path = Model.xcdatamodeld;
+			sourceTree = "<group>";
+			versionGroupType = wrapper.xcdatamodel;
+		};
+/* End XCVersionGroup section */
 	};
 	rootObject = 33A581F81C7A959000686F7D /* Project object */;
 }
